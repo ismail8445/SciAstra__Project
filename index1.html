@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SciAstra Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>SciAstra</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#blog-management">Blog</a></li>
+                <li><a href="#purchase">Purchase</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Homepage Section with Dynamic Discounted Courses -->
+    <section id="home">
+        <h2>Welcome to SciAstra</h2>
+        <p>Your destination for quality courses in science and technology.</p>
+    </section>
+
+    <!-- Courses Section with Real-Time Discounted Courses Display -->
+    <section id="courses">
+        <h2>Discounted Courses</h2>
+        <div class="course-container">
+            <!-- Sample Course Cards (these would be populated dynamically) -->
+            <div class="course-card">
+                <h3>Course Title</h3>
+                <p>Original Price: <span class="original-price">$100</span></p>
+                <p class="discounted-price">Discounted Price: $50</p>
+                <button>Enroll Now</button>
+            </div>
+            <div class="course-card">
+                <h3>Advanced Physics</h3>
+                <p>Original Price: <span class="original-price">$120</span></p>
+                <p class="discounted-price">Discounted Price: $90</p>
+                <button>Enroll Now</button>
+            </div>
+            <!-- Add more course cards as needed -->
+        </div>
+    </section>
+
+    <!-- Blog Management Section for Admins -->
+    <section id="blog-management">
+        <h2>Blog Management</h2>
+        <form id="blog-form">
+            <!-- Blog Title -->
+            <label for="title">Post Title:</label>
+            <input type="text" id="title" name="title" required>
+
+            <!-- Blog Content -->
+            <label for="content">Content:</label>
+            <textarea id="content" name="content" rows="5" required></textarea>
+
+            <!-- Publish Date and Time Selection -->
+            <label for="publish-date">Publish Date:</label>
+            <input type="datetime-local" id="publish-date" name="publish-date" required>
+
+            <!-- Schedule Post Button -->
+            <button type="submit">Schedule Post</button>
+        </form>
+
+        <!-- Placeholder for Scheduled Posts (would be dynamically updated) -->
+        <div class="blog-list">
+            <h3>Scheduled Posts</h3>
+            <p>No posts scheduled yet.</p>
+        </div>
+    </section>
+
+    <!-- Course Purchase Flow Section -->
+    <section id="purchase">
+        <h2>Course Purchase</h2>
+        <form id="purchase-form">
+            <!-- Selected Course Dropdown -->
+            <label for="course">Selected Course:</label>
+            <select id="course" name="course">
+                <option value="course1">Course 1</option>
+                <option value="course2">Course 2</option>
+            </select>
+
+            <!-- User Name -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <!-- User Email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <!-- OTP Verification Field -->
+            <label for="otp">Enter OTP for Verification:</label>
+            <input type="text" id="otp" name="otp" required>
+
+            <!-- Proceed to Payment Button -->
+            <button type="submit">Proceed to Payment</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2023 SciAstra. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
